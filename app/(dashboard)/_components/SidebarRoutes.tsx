@@ -35,6 +35,7 @@ const SidebarRoutes = () => {
   const isTeacherPage = pathname?.includes("/teacher");
 
   const routes = isTeacherPage ? teacherRoutes : guestRoutes;
+
   return (
     <div className="flex flex-col w-full">
       {routes.map((route, index) => (
